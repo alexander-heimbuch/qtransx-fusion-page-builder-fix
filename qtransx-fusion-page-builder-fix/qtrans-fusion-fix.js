@@ -8,8 +8,7 @@
                     };
                 })();
 
-        // Initial load the fusion core editor
-        $fusionButton.trigger('click');
+
 
         // Intercept click event
         $languageSwitch.each(function () {
@@ -41,7 +40,10 @@
                     $btn.trigger('click');
                 }
             });
-
         });
+
+        // Initial load the fusion core editor
+        $fusionButton.trigger('click');
+        $languageSwitch.parent().find('.active').trigger('click');
     });
 })(jQuery);
