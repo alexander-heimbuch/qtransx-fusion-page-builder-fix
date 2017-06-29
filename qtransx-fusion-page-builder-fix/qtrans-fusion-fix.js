@@ -1,10 +1,10 @@
 (function ($) {
     $(window).load(function () {
-        var $fusionButton = $('#fusion-pb-switch-button'),
+        var $fusionButton = $('#fusion_toggle_builder'),
             $languageSwitch = $('.qtranxs-lang-switch-wrap li'),
             isFusionEditor = (function () {
                     return function () {
-                        return $('#ddbuilder').is(':visible');
+                        return $('#fusion_builder_layout').is(':visible');
                     };
                 })();
 
